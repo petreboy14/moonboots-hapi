@@ -6,9 +6,9 @@ function routeConfig(clientApp, extend) {
     if (extend && clientHapiConfig) config = clientHapiConfig;
 
     if (!clientApp.getConfig('developmentMode')) {
-        config.cache = {
-            expiresIn: clientApp.getConfig('cachePeriod')
-        };
+        // config.cache = {
+//             expiresIn: clientApp.getConfig('cachePeriod')
+//         };
     }
     return config;
 }
